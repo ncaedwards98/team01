@@ -1,0 +1,34 @@
+{
+  "ed606b76-827b-4706-b93d-217120decce9": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1607/1.0.1607.3068/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://restorationweldon.sharepoint.com/sites/MISCapstoneEventPlanner": {
+        "dataSources": {
+          "Contingency Plans": {
+            "tableName": "1527d580-2977-4e2f-8057-78a6de224537"
+          },
+          "Events_1": {
+            "tableName": "774d9a3d-cfea-4602-aaff-fc992d55f75a"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Events_1",
+      "Contingency Plans"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ed606b76-827b-4706-b93d-217120decce9"
+  }
+}
