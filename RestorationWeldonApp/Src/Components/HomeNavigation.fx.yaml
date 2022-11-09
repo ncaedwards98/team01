@@ -1,0 +1,94 @@
+HomeNavigation As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =App.Width
+    HomeMenuItems: |-
+        =Table(
+            {
+                MenuLabel: "Home",
+                MenuScreenNavigate: Home,
+                MenuID: 1
+            },
+            {
+                MenuLabel: "Events",
+                MenuScreenNavigate: Events,
+                MenuID: 2
+            },
+            {
+                MenuLabel: "Locations",
+                MenuScreenNavigate: Locations,
+                MenuID: 3
+            },
+            {
+                MenuLabel: "Volunteers",
+                MenuScreenNavigate: 'Possible Volunteers',
+                MenuID: 4
+            },
+            {
+                MenuLabel: "Job Roles",
+                MenuScreenNavigate: 'Job Roles',
+                MenuID: 5
+            },
+            {
+                MenuLabel: "Vendors",
+                MenuScreenNavigate: Vendors,
+                MenuID: 6
+            },
+            {
+                MenuLabel: "Entertainment",
+                MenuScreenNavigate: 'Possible Volunteers',
+                MenuID: 7
+            },
+            {
+                MenuLabel: "Food and Beverage",
+                MenuScreenNavigate: 'Possible Food and Beverage',
+                MenuID: 8
+            },
+            {
+                MenuLabel: "Permits",
+                MenuScreenNavigate: Permits,
+                MenuID: 9
+            },
+            {
+                MenuLabel: "Contigency Plans",
+                MenuScreenNavigate: 'Contigency Plan',
+                MenuID: 10
+            }
+        )
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HomeMenuGallery As gallery.variableTemplateHeightGallery:
+        Height: =App.Height-88
+        Items: =HomeNavigation.HomeMenuItems
+        Layout: =Layout.Vertical
+        TemplatePadding: =15
+        TemplateSize: =280
+        Width: =App.Width
+        Y: =40
+        ZIndex: =1
+
+        HomeMenuLabels As label:
+            Align: =Align.Center
+            AutoHeight: =true
+            BorderThickness: =1
+            Fill: =RGBA(230, 230, 230, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =68
+            OnSelect: =Select(Parent)
+            Size: =20
+            Text: =ThisItem.MenuLabel
+            Width: =App.Width
+            ZIndex: =1
+
+        HomeButtonClickToNavigate As button:
+            Fill: =Transparent
+            Height: =HomeMenuLabels.Height+HomeMenuLabels.Y
+            HoverFill: =Transparent
+            OnSelect: =Navigate(ThisItem.MenuScreenNavigate,ScreenTransition.Cover)
+            PressedFill: =Transparent
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =2
+

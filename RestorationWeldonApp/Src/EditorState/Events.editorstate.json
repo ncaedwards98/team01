@@ -13340,14 +13340,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "NavIconColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "NavIconColor",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -13425,7 +13418,7 @@
         {
           "Category": "Data",
           "PropertyName": "NavIconColor",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -13465,7 +13458,7 @@
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

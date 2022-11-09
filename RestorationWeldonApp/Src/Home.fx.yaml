@@ -1,2 +1,17 @@
 Home As screen:
 
+    HomeNavigation_1 As HomeNavigation:
+        Height: =679
+        Width: =1366
+        Y: =88
+
+    Label6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(39, 67, 125, 1)
+        Height: =88
+        Size: =28
+        Text: ="Home"
+        Width: =App.Width
+        ZIndex: =2
+
