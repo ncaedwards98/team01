@@ -6,7 +6,7 @@ Locations As screen:
         HintText: ="Search items"
         PaddingLeft: =70
         Size: =21
-        Width: =App.Width
+        Width: =1366
         Y: =88
         ZIndex: =1
 
@@ -573,6 +573,15 @@ Locations As screen:
             X: =40
             Y: =40
             ZIndex: =6
+
+    SearchIconLocations As icon.Search:
+        Icon: =Icon.Search
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Y: =92
+        ZIndex: =14
 
     LocationDeleteConfirmation As group:
         Height: =5

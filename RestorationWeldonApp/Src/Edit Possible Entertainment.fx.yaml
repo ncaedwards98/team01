@@ -1,6 +1,6 @@
 "'Edit Possible Entertainment' As screen":
 
-    JobRoleEditForm_1 As form:
+    EntertainmentEditForm As form:
         BorderThickness: =1
         DataSource: ='Job Roles_1'
         Height: =565
@@ -360,7 +360,7 @@
         Icon: =Icon.Save
         OnSelect: |-
             =//saves changes to list
-            SubmitForm(JobRoleEditForm_1);
+            SubmitForm(EntertainmentEditForm);
             //goes back to previous screen
             Back()
         PaddingBottom: =13

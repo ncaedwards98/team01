@@ -68,9 +68,9 @@
         Icon: =Icon.Edit
         OnSelect: |-
             =//Edits Select item in list
-            EditForm(LocationEditForm);
+            EditForm(JobRoleEditForm);
             //Navigates to edit screen
-            Navigate('Edit Location Information')
+            Navigate('Edit Job Roles')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -369,6 +369,16 @@
             X: =40
             Y: =40
             ZIndex: =6
+
+    SearchIconJobRoles As icon.Search:
+        Height: =68
+        Icon: =Icon.Search
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Y: =88
+        ZIndex: =14
 
     JobRoleDeleteConfirmation As group:
         Height: =5

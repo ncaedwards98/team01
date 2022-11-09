@@ -1,6 +1,6 @@
 "'Possible Entertainment' As screen":
 
-    SearchJobRoles_1 As text:
+    SearchEntertainment As text:
         Default: =""
         Height: =68
         HintText: ="Search items"
@@ -10,25 +10,25 @@
         Y: =88
         ZIndex: =1
 
-    JobRoleHeader_1 As label:
+    EntertainmentHeader As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 67, 125, 1)
         Height: =88
         Size: =28
-        Text: ="Job Roles"
+        Text: ="Entertainment"
         Width: =App.Width
         ZIndex: =2
 
-    JobRoleAddButton_1 As icon.Add:
+    EntertainmentAddButton As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Add
         OnSelect: |-
             =//Creates blank form to add new information
-            NewForm(JobRoleEditForm);
+            NewForm(EntertainmentEditForm);
             //navigates to the edit form
-            Navigate('Edit Job Roles')
+            Navigate('Edit Possible Entertainment')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -37,11 +37,11 @@
         X: =1287
         ZIndex: =3
 
-    JobRoleRefreshButton_1 As icon.Add:
+    EntertainmentRefreshButton As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Reload
-        OnSelect: =Refresh('Job Roles_1')
+        OnSelect: =Refresh(Entertainment)
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -50,7 +50,7 @@
         X: =1147
         ZIndex: =4
 
-    JobRoleBackButton_1 As icon.Add:
+    EntertainmentBackButton As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.BackArrow
@@ -62,15 +62,15 @@
         Width: =76
         ZIndex: =5
 
-    JobRoleEditButton_1 As icon.Edit:
+    EntertainmentEditButton As icon.Edit:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Edit
         OnSelect: |-
             =//Edits Select item in list
-            EditForm(LocationEditForm);
+            EditForm(EntertainmentEditForm);
             //Navigates to edit screen
-            Navigate('Edit Location Information')
+            Navigate('Edit Possible Entertainment')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -79,10 +79,10 @@
         X: =1219
         ZIndex: =6
 
-    JobRoleViewer_1 As formViewer:
+    EntertainmentViewer As formViewer:
         DataSource: =Entertainment
         Height: =488
-        Item: =JobRoleGallery_1.Selected
+        Item: =EntertainmentGallery.Selected
         Width: =926
         X: =426
         Y: =158
@@ -190,8 +190,8 @@
                 Y: =DataCardKey66.Y
                 ZIndex: =4
 
-    "JobRoleGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Items: =Entertainment
+    "EntertainmentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Items: =SortByColumns(Filter([@Entertainment], StartsWith(Title, SearchEntertainment.Text)), "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
@@ -267,7 +267,7 @@
             Y: =40
             ZIndex: =6
 
-    JobRoleDeleteConfirmation_1 As group:
+    EntertainmentDeleteConfirmation As group:
         Height: =5
         Width: =5
         X: =40
@@ -294,7 +294,7 @@
         Label3_6 As label:
             Align: =Align.Center
             Height: =91
-            Text: ="Are you sure you want to delete " & JobRoleGallery_1.Selected.Title & "?"
+            Text: ="Are you sure you want to delete " & EntertainmentGallery.Selected.Title & "?"
             Visible: =varShowDelete
             Width: =488
             X: =439
@@ -305,7 +305,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
-                Remove('Job Roles_1', JobRoleGallery_1.Selected);
+                Remove(Entertainment, EntertainmentGallery.Selected);
                 //exits out of delete confirmation interface
                 Set(varShowDelete, false)
             Text: ="Delete"

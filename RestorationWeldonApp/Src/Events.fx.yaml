@@ -831,6 +831,17 @@ Events As screen:
             Y: =48
             ZIndex: =6
 
+    SearchIconEvents As icon.Search:
+        Height: =70
+        Icon: =Icon.Search
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =65
+        Y: =88
+        ZIndex: =14
+
     EventDeleteConfirmation As group:
         Height: =5
         Width: =5
