@@ -54,6 +54,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Locations.LocationGallery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Locations.LocationGallery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 41,
+                  "snippet": {
+                    "text": "\"Title\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Locations",
+                "type": "Locations.LocationGallery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Search"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Vendors.VendorsGallery.Items"
                 }
               ],
