@@ -19,13 +19,21 @@
           },
           "Events_1": {
             "tableName": "774d9a3d-cfea-4602-aaff-fc992d55f75a"
+          },
+          "Job Roles_1": {
+            "tableName": "2c52af50-1974-4099-afdd-160022cadf11"
+          },
+          "Location_1": {
+            "tableName": "8a730d96-2191-47d6-a8fb-35833d769570"
           }
         }
       }
     },
     "dataSources": [
       "Events_1",
-      "Contingency Plans"
+      "Contingency Plans",
+      "Location_1",
+      "Job Roles_1"
     ],
     "dependencies": {},
     "dependents": [],

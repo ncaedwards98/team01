@@ -1,11 +1,13 @@
-"'Event Form' As screen":
+"'Edit Event Information' As screen":
 
-    Form2 As form:
+    EventEditForm As form:
+        BorderThickness: =1
         DataSource: =Events_1
-        Height: =651
-        Width: =1275
-        X: =45
-        Y: =61
+        Height: =565
+        Item: =EventGallery.Selected
+        Width: |
+            =App.Width
+        Y: =88
         ZIndex: =1
 
         Title_DataCard1 As typedDataCard.textualEditCard:
@@ -19,7 +21,7 @@
             MaxLength: =DataSourceInfo([@Events_1], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue1.Text
-            Width: =425
+            Width: =455
             X: =0
             Y: =0
             ZIndex: =2
@@ -86,7 +88,7 @@
             Height: =50
             Required: =false
             Update: =DateValue1.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0)
-            Width: =425
+            Width: =455
             X: =1
             Y: =0
             ZIndex: =2
@@ -200,7 +202,7 @@
             MaxLength: =DataSourceInfo([@Events_1], DataSourceInfo.MaxLength, "Status")
             Required: =false
             Update: =DataCardValue2.Text
-            Width: =425
+            Width: =455
             X: =2
             Y: =0
             ZIndex: =2
@@ -257,6 +259,71 @@
                 Y: =DataCardKey3.Y
                 ZIndex: =4
 
+        "'Job Roles_DataCard1' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="JobRoles"
+            Default: =ThisItem.'Job Roles'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"JobRoles")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue5.SelectedItems
+            Width: =455
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Events_1].JobRoles)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Events_1.JobRoles,DataCardValue5.SearchText)
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
         Location_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Location"
@@ -267,8 +334,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue3.Selected
-            Width: =425
-            X: =0
+            Width: =455
+            X: =1
             Y: =1
             ZIndex: =2
 
@@ -333,8 +400,8 @@
             Height: =50
             Required: =false
             Update: =DataCardValue4.SelectedItems
-            Width: =425
-            X: =1
+            Width: =455
+            X: =2
             Y: =1
             ZIndex: =2
 
@@ -388,71 +455,6 @@
                 Y: =DataCardKey5.Y
                 ZIndex: =4
 
-        "'Job Roles_DataCard1' As typedDataCard.comboBoxMultiSelectEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="JobRoles"
-            Default: =ThisItem.'Job Roles'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Events_1],DataSourceInfo.DisplayName,"JobRoles")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue5.SelectedItems
-            Width: =425
-            X: =2
-            Y: =1
-            ZIndex: =2
-
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue5 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Events_1].JobRoles)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Events_1.JobRoles,DataCardValue5.SearchText)
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
-                ZIndex: =2
-
-            ErrorMessage6 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue5.Y + DataCardValue5.Height
-                ZIndex: =3
-
-            StarVisible6 As label:
-                Align: =Align.Center
-                Height: =DataCardKey6.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey6.Y
-                ZIndex: =4
-
         "'Contingency Plans_DataCard1' As typedDataCard.comboBoxMultiSelectEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ContingencyPlans"
@@ -463,7 +465,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue6.SelectedItems
-            Width: =425
+            Width: =455
             X: =0
             Y: =2
             ZIndex: =2
@@ -528,7 +530,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue7.SelectedItems
-            Width: =425
+            Width: =455
             X: =1
             Y: =2
             ZIndex: =2
@@ -593,7 +595,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue8.SelectedItems
-            Width: =425
+            Width: =455
             X: =2
             Y: =2
             ZIndex: =2
@@ -658,7 +660,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue9.Attachments
-            Width: =425
+            Width: =455
             X: =0
             Y: =3
             ZIndex: =2
@@ -683,7 +685,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =395
                 X: =30
                 Y: =DataCardKey10.Y + DataCardKey10.Height + 5
                 ZIndex: =2
@@ -712,4 +714,112 @@
                 Wrap: =false
                 Y: =DataCardKey10.Y
                 ZIndex: =4
+
+    EventEditHeader As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(39, 67, 125, 1)
+        Height: =88
+        Size: =28
+        Text: ="Edit/New Event"
+        Width: |
+            =App.Width
+        ZIndex: =2
+
+    EventSaveButton As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.Save
+        OnSelect: |-
+            =//saves changes to list
+            SubmitForm(EventEditForm);
+            //goes back to previous screen
+            Back()
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =82
+        X: =1283
+        ZIndex: =3
+
+    BackButton_1 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.BackArrow
+        OnSelect: =Set(varBack, Back(Fade))
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =76
+        ZIndex: =4
+
+    EditEventDeleteIcon As icon.Trash:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.Trash
+        OnSelect: =Set(varShowDelete, true)
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =74
+        X: =1209
+        ZIndex: =5
+
+    EditEventDeleteConfirmation As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Rectangle1 As rectangle:
+            Fill: =RGBA(169,169,169,.75)
+            Height: =768
+            Visible: =varShowDelete
+            Width: =1366
+            ZIndex: =6
+
+        Rectangle2 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =310
+            Visible: =varShowDelete
+            Width: =526
+            X: =420
+            Y: =215
+            ZIndex: =7
+
+        Label3 As label:
+            Align: =Align.Center
+            Height: =91
+            Text: ="Are you sure you want to delete " & EventGallery.Selected.Title & "?"
+            Visible: =varShowDelete
+            Width: =488
+            X: =439
+            Y: =238
+            ZIndex: =8
+
+        Button1 As button:
+            Fill: =RGBA(168, 0, 0, 1)
+            OnSelect: |-
+                =//deletes selected item
+                Remove(Events_1, EventGallery.Selected);
+                //exits out of delete confirmation interface
+                Set(varShowDelete, false)
+            Text: ="Delete"
+            Visible: =varShowDelete
+            X: =464
+            Y: =432
+            ZIndex: =9
+
+        Button2 As button:
+            OnSelect: =Set(varShowDelete, false)
+            Text: ="Cancel"
+            Visible: =varShowDelete
+            X: =743
+            Y: =432
+            ZIndex: =10
 

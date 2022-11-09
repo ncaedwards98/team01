@@ -19,15 +19,16 @@
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
+      "consistentreturnschemafortabularfunctions": false,
       "copyandmerge": true,
       "datatablev2control": true,
       "delaycontrolrendering": false,
       "delayloadscreens": true,
       "disablecdsfileandlargeimage": false,
+      "disablecommandbar": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
       "enablebarcodereaderfeature": false,
-      "enablecommandbar": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
       "enableeditcacherefreshfrequency": false,
@@ -111,7 +112,10 @@
   "ScreenOrder": [
     "Home",
     "Events",
-    "Event Description",
-    "Event Form"
+    "Edit Event Information",
+    "Locations",
+    "Edit Location Information",
+    "Job Roles",
+    "Edit Job Roles"
   ]
 }
