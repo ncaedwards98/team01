@@ -1,4 +1,7 @@
 "'Possible Volunteers' As screen":
+    OnVisible: |-
+        =ClearCollect(CollectVideo, {Result:"All"});
+        Collect(CollectVideo, Distinct(Volunteers, VolunteerActivity.Value))
 
     SearchVolunteers As text:
         Default: =""
@@ -12,7 +15,9 @@
 
     "VolunteersGallery As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Height: =610
-        Items: =Search(Volunteers, SearchVolunteers.Text,"Title","FirstName")
+        Items: |-
+            =Search(
+            If(VolunteerDropdownFilter.Selected.Result = "All", Volunteers, Filter(Volunteers, 'Volunteer Activity'.Value=VolunteerDropdownFilter.Selected.Result)),SearchVolunteers.Text, "FirstName","Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
@@ -586,21 +591,11 @@
         Y: =40
         ZIndex: =16
 
-    Checkbox1 As checkbox:
-        Text: ="Active"
-        X: =846
-        Y: =19
+    VolunteerDropdownFilter As dropdown:
+        Default: ="All"
+        Items: =CollectVideo
+        Width: =200
+        X: =937
+        Y: =24
         ZIndex: =17
-
-    Checkbox1_1 As checkbox:
-        Text: ="Inactive"
-        X: =997
-        Y: =19
-        ZIndex: =18
-
-    Checkbox1_2 As checkbox:
-        Text: ="Option"
-        X: =160
-        Y: =39
-        ZIndex: =19
 
