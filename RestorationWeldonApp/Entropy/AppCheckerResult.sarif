@@ -134,6 +134,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Possible Entertainment'.EntertainmentGallery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Possible Entertainment'.EntertainmentGallery.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 42,
+                  "snippet": {
+                    "text": "\"Title\""
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Possible Entertainment",
+                "type": "'Possible Entertainment'.EntertainmentGallery"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Search"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Vendors.VendorsGallery.Items"
                 }
               ],
@@ -6067,6 +6107,36 @@
                 "member": "Item",
                 "module": "Edit Job Roles",
                 "type": "'Edit Job Roles'.JobRoleEditForm"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Possible Entertainment'.EntertainmentGallery.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Possible Entertainment'.EntertainmentGallery.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Possible Entertainment",
+                "type": "'Possible Entertainment'.EntertainmentGallery"
               }
             }
           ],
