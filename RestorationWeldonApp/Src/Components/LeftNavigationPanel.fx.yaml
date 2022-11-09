@@ -1,74 +1,114 @@
 LeftNavigationPanel As CanvasComponent:
+    ExpandMenu: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
+    Height: =LeftNavigationPanel.MenuHeight
+    MenuBackgroundColor: |
+        =LightGray
+    MenuColor: =Purple
+    MenuHeight: =If(ShowMenu,LeftNavigationPanel.SetMenuHeight,NavIcon.Height)
     MenuItems: |-
         =Table(
             {
                 MenuLabel: "Home",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: Home,
                 MenuID: 1
             },
             {
                 MenuLabel: "Events",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: Events,
                 MenuID: 2
             },
             {
                 MenuLabel: "Locations",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: Locations,
                 MenuID: 3
             },
             {
                 MenuLabel: "Volunteers",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: 'Possible Volunteers',
                 MenuID: 4
             },
             {
                 MenuLabel: "Job Roles",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: 'Job Roles',
                 MenuID: 5
             },
             {
                 MenuLabel: "Vendors",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: Vendors,
                 MenuID: 6
             },
             {
                 MenuLabel: "Entertainment",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: 'Possible Volunteers',
                 MenuID: 7
             },
             {
                 MenuLabel: "Food and Beverage",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: 'Possible Food and Beverage',
                 MenuID: 8
             },
             {
                 MenuLabel: "Permits",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: Permits,
                 MenuID: 9
             },
             {
                 MenuLabel: "Contigency Plans",
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: 'Contigency Plan',
                 MenuID: 10
             }
         )
-    Width: =640
+    MenuWidth: =If(ShowMenu,LeftNavigationPanel.SetMenuWidth,NavIcon.Width)
+    NavIconColor: =RGBA(0, 0, 0, 1)
+    OnReset: =Set(ShowMenu, LeftNavigationPanel.ExpandMenu)
+    SetMenuHeight: =500
+    SetMenuWidth: =300
+    Width: =LeftNavigationPanel.MenuWidth
     X: =0
     Y: =0
     ZIndex: =1
 
     NavIcon As icon.Hamburger:
         Icon: =Icon.Hamburger
+        OnSelect: =Set(ShowMenu,!ShowMenu)
         X: =3
         ZIndex: =2
 
     NavMenuGallery As gallery.variableTemplateHeightGallery:
-        Height: =Parent.Height-NavIcon.Height
-        Items: =CustomGallerySample
+        Fill: =LeftNavigationPanel.MenuBackgroundColor
+        Height: =557
+        Items: =LeftNavigationPanel.MenuItems
         Layout: =Layout.Vertical
         TemplateSize: =280
-        Y: =NavIcon.Height
+        Visible: =ShowMenu
+        Y: =82
         ZIndex: =3
+
+        MenuIdentifier As rectangle:
+            Fill: =LeftNavigationPanel.MenuColor
+            Height: =33
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.MenuScreenNavigate = App.ActiveScreen
+            Width: =6
+            X: =3
+            ZIndex: =1
+
+        MenuItemName As label:
+            Height: =33
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.MenuLabel
+            Width: =620
+            X: =9
+            ZIndex: =2
+
+        ButtonClickToNavigate As button:
+            Fill: =Transparent
+            Height: =MenuItemName.Height+MenuItemName.Y
+            HoverFill: =Transparent
+            OnSelect: =Navigate(ThisItem.MenuScreenNavigate,ScreenTransition.Cover)
+            PressedFill: =Transparent
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =3
 

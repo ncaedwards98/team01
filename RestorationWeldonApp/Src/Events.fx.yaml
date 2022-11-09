@@ -897,3 +897,12 @@ Events As screen:
             Y: =432
             ZIndex: =13
 
+    LeftNavigationPanel_1 As LeftNavigationPanel:
+        Height: =495
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_1.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_1.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_1.ExpandMenu)
+        Width: =LeftNavigationPanel_1.MenuWidth
+        Y: =12
+        ZIndex: =15
+
