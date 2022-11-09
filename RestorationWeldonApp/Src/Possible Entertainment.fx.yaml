@@ -192,7 +192,7 @@
 
     "EntertainmentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =610
-        Items: =Search(Entertainment, SearchVendors.Text, "Title")
+        Items: =Search(Entertainment, SearchEntertainment.Text, "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0

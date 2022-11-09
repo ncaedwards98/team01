@@ -23,6 +23,9 @@
           "Events_1": {
             "tableName": "774d9a3d-cfea-4602-aaff-fc992d55f75a"
           },
+          "Food and Beverage": {
+            "tableName": "8c9f782b-bca3-422d-a798-b15857dc5245"
+          },
           "Job Roles_1": {
             "tableName": "2c52af50-1974-4099-afdd-160022cadf11"
           },
@@ -45,7 +48,8 @@
       "Job Roles_1",
       "Entertainment",
       "Vendors_1",
-      "Volunteers"
+      "Volunteers",
+      "Food and Beverage"
     ],
     "dependencies": {},
     "dependents": [],

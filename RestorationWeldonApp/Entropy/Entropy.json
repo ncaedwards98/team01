@@ -646,7 +646,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/09/2022 19:28:18",
+  "HeaderLastSavedDateTimeUTC": "11/09/2022 19:34:33",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "ed606b76-827b-4706-b93d-217120decce9": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/shared-sharepointonl-c32e4c52-812e-4000-a8d7-8fc64758b733\""
@@ -661,13 +661,14 @@
     "a5504c24b4cc46b5a56e5e42139158db": 0
   },
   "OrderDataSource": {
-    "CollectVideo": 11,
+    "CollectVideo": 12,
     "ComboBoxSample": 3,
     "Contingency Plans": 4,
     "CustomGallerySample": 0,
     "DropDownSample": 2,
     "Entertainment": 7,
     "Events_1": 1,
+    "Food and Beverage": 11,
     "Job Roles_1": 6,
     "Location_1": 5,
     "RadioSample": 10,
@@ -1461,7 +1462,7 @@
       "typedDataCard": 104
     },
     "DeserializationLoadTime": 1.7306109,
-    "ErrorCount": 5
+    "ErrorCount": 6
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
