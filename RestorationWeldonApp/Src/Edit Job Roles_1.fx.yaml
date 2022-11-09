@@ -1,6 +1,6 @@
-"'Edit Job Roles' As screen":
+"'Edit Job Roles_1' As screen":
 
-    JobRoleEditForm As form:
+    JobRoleEditForm_1 As form:
         BorderThickness: =1
         DataSource: ='Job Roles_1'
         Height: =565
@@ -10,7 +10,7 @@
         Y: =88
         ZIndex: =1
 
-        Title_DataCard7 As typedDataCard.textualEditCard:
+        Title_DataCard7_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -20,13 +20,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@'Job Roles_1'], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue58.Text
+            Update: =DataCardValue58_1.Text
             Width: =455
             X: =0
             Y: =0
             ZIndex: =2
 
-            DataCardKey60 As label:
+            DataCardKey60_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -36,7 +36,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue58 As text:
+            DataCardValue58_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -50,10 +50,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                Y: =DataCardKey60_1.Y + DataCardKey60_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage33 As label:
+            ErrorMessage33_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -65,20 +65,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue58.Y + DataCardValue58.Height
+                Y: =DataCardValue58_1.Y + DataCardValue58_1.Height
                 ZIndex: =3
 
-            StarVisible33 As label:
+            StarVisible33_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey60.Height
+                Height: =DataCardKey60_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey60.Y
+                Y: =DataCardKey60_1.Y
                 ZIndex: =4
 
-        "'Volunteer Assigned: First Name_DataCard2' As typedDataCard.comboBoxViewCard":
+        "'Volunteer Assigned: First Name_DataCard2_1' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Volunteer_x0020_Assigned_x003a__"
             Default: |-
@@ -88,13 +88,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =80
             Required: =false
-            Update: =DataCardValue61.Selected
+            Update: =DataCardValue61_1.Selected
             Width: =455
             X: =1
             Y: =0
             ZIndex: =2
 
-            DataCardKey63 As label:
+            DataCardKey63_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -104,7 +104,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue61 As combobox:
+            DataCardValue61_1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -112,14 +112,14 @@
                 Items: =Choices([@'Job Roles_1'].Volunteer_x0020_Assigned_x003a__)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Job Roles_1'.Volunteer_x0020_Assigned_x003a__,DataCardValue61.SearchText)
+                SearchItems: =Choices('Job Roles_1'.Volunteer_x0020_Assigned_x003a__,DataCardValue61_1.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                Y: =DataCardKey63_1.Y + DataCardKey63_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage36 As label:
+            ErrorMessage36_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -131,20 +131,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue61.Y + DataCardValue61.Height
+                Y: =DataCardValue61_1.Y + DataCardValue61_1.Height
                 ZIndex: =3
 
-            StarVisible36 As label:
+            StarVisible36_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey63.Height
+                Height: =DataCardKey63_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey63.Y
+                Y: =DataCardKey63_1.Y
                 ZIndex: =4
 
-        "'Volunteer Assigned_DataCard2' As typedDataCard.comboBoxEditCard":
+        "'Volunteer Assigned_DataCard2_1' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="VolunteerAssigned"
             Default: =ThisItem.'Volunteer Assigned'
@@ -153,13 +153,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue60.Selected
+            Update: =DataCardValue60_1.Selected
             Width: =455
             X: =2
             Y: =0
             ZIndex: =2
 
-            DataCardKey62 As label:
+            DataCardKey62_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -169,7 +169,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue60 As combobox:
+            DataCardValue60_1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -177,15 +177,15 @@
                 Items: =Choices([@'Job Roles_1'].VolunteerAssigned)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Job Roles_1'.VolunteerAssigned,DataCardValue60.SearchText)
+                SearchItems: =Choices('Job Roles_1'.VolunteerAssigned,DataCardValue60_1.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey62.Y + DataCardKey62.Height + 5
+                Y: =DataCardKey62_1.Y + DataCardKey62_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage35 As label:
+            ErrorMessage35_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -197,20 +197,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue60.Y + DataCardValue60.Height
+                Y: =DataCardValue60_1.Y + DataCardValue60_1.Height
                 ZIndex: =3
 
-            StarVisible35 As label:
+            StarVisible35_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey62.Height
+                Height: =DataCardKey62_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey62.Y
+                Y: =DataCardKey62_1.Y
                 ZIndex: =4
 
-        "'Job Description_DataCard2' As typedDataCard.textualEditCard":
+        "'Job Description_DataCard2_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="JobDescription"
             Default: =ThisItem.'Job Description'
@@ -220,13 +220,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@'Job Roles_1'], DataSourceInfo.MaxLength, "JobDescription")
             Required: =false
-            Update: =DataCardValue59.Text
+            Update: =DataCardValue59_1.Text
             Width: =455
             X: =0
             Y: =1
             ZIndex: =2
 
-            DataCardKey61 As label:
+            DataCardKey61_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -236,7 +236,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue59 As text:
+            DataCardValue59_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -250,10 +250,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                Y: =DataCardKey61_1.Y + DataCardKey61_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage34 As label:
+            ErrorMessage34_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -265,20 +265,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue59.Y + DataCardValue59.Height
+                Y: =DataCardValue59_1.Y + DataCardValue59_1.Height
                 ZIndex: =3
 
-            StarVisible34 As label:
+            StarVisible34_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey61.Height
+                Height: =DataCardKey61_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey61.Y
+                Y: =DataCardKey61_1.Y
                 ZIndex: =4
 
-        Attachments_DataCard3 As typedDataCard.attachmentsEditCard:
+        Attachments_DataCard3_1 As typedDataCard.attachmentsEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="{Attachments}"
             Default: =ThisItem.Attachments
@@ -287,13 +287,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue62.Attachments
+            Update: =DataCardValue62_1.Attachments
             Width: =455
             X: =1
             Y: =1
             ZIndex: =2
 
-            DataCardKey64 As label:
+            DataCardKey64_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -303,7 +303,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue62 As attachments:
+            DataCardValue62_1 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 IsInDataCard: =true
@@ -315,10 +315,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey64.Y + DataCardKey64.Height + 5
+                Y: =DataCardKey64_1.Y + DataCardKey64_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage37 As label:
+            ErrorMessage37_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -330,20 +330,20 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue62.Y + DataCardValue62.Height
+                Y: =DataCardValue62_1.Y + DataCardValue62_1.Height
                 ZIndex: =3
 
-            StarVisible37 As label:
+            StarVisible37_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey64.Height
+                Height: =DataCardKey64_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey64.Y
+                Y: =DataCardKey64_1.Y
                 ZIndex: =4
 
-    JobRoleEditHeader As label:
+    JobRoleEditHeader_1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 67, 125, 1)
@@ -354,13 +354,13 @@
             =App.Width
         ZIndex: =2
 
-    SaveJobRoleButton As icon.Add:
+    SaveJobRoleButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Save
         OnSelect: |-
             =//saves changes to list
-            SubmitForm(JobRoleEditForm);
+            SubmitForm(JobRoleEditForm_1);
             //goes back to previous screen
             Back()
         PaddingBottom: =13
@@ -371,7 +371,7 @@
         X: =1283
         ZIndex: =3
 
-    BackButton_3 As icon.Add:
+    BackButton_4 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.BackArrow
@@ -383,7 +383,7 @@
         Width: =76
         ZIndex: =4
 
-    EditJobRoleDeleteIcon As icon.Trash:
+    EditJobRoleDeleteIcon_1 As icon.Trash:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Trash
@@ -396,21 +396,21 @@
         X: =1209
         ZIndex: =10
 
-    EditJobRoleDeleteConfirmation As group:
+    EditJobRoleDeleteConfirmation_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =10
 
-        Rectangle1_5 As rectangle:
+        Rectangle1_7 As rectangle:
             Fill: =RGBA(169,169,169,.75)
             Height: =768
             Visible: =varShowDelete
             Width: =1366
             ZIndex: =5
 
-        Rectangle2_5 As rectangle:
+        Rectangle2_7 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
             Height: =310
@@ -420,7 +420,7 @@
             Y: =215
             ZIndex: =6
 
-        Label3_5 As label:
+        Label3_7 As label:
             Align: =Align.Center
             Height: =91
             Text: ="Are you sure you want to delete " & LocationGallery.Selected.Title & "?"
@@ -430,7 +430,7 @@
             Y: =238
             ZIndex: =7
 
-        Button1_5 As button:
+        Button1_7 As button:
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
@@ -443,7 +443,7 @@
             Y: =432
             ZIndex: =8
 
-        Button2_5 As button:
+        Button2_7 As button:
             OnSelect: =Set(varShowDelete, false)
             Text: ="Cancel"
             Visible: =varShowDelete

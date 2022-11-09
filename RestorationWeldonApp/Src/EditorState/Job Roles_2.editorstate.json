@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Button1_4": {
+    "Button1_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -78,7 +78,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button1_4",
+      "Name": "Button1_6",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -271,7 +271,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "Button2_4": {
+    "Button2_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -342,7 +342,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button2_4",
+      "Name": "Button2_6",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -535,7 +535,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey56": {
+    "DataCardKey56_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -596,7 +596,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey56",
+      "Name": "DataCardKey56_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -809,7 +809,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey57": {
+    "DataCardKey57_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -870,7 +870,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey57",
+      "Name": "DataCardKey57_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1083,7 +1083,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey58": {
+    "DataCardKey58_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1144,7 +1144,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey58",
+      "Name": "DataCardKey58_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1357,7 +1357,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey59": {
+    "DataCardKey59_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1418,7 +1418,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey59",
+      "Name": "DataCardKey59_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1631,7 +1631,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue54": {
+    "DataCardValue54_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1698,7 +1698,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue54",
+      "Name": "DataCardValue54_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1906,7 +1906,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue55": {
+    "DataCardValue55_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1973,7 +1973,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue55",
+      "Name": "DataCardValue55_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2181,7 +2181,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue56": {
+    "DataCardValue56_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2284,7 +2284,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue56",
+      "Name": "DataCardValue56_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2532,7 +2532,7 @@
       "StyleName": "defaultComboBoxStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue57": {
+    "DataCardValue57_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2635,7 +2635,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue57",
+      "Name": "DataCardValue57_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2883,7 +2883,7 @@
       "StyleName": "defaultComboBoxStyle",
       "Type": "ControlInfo"
     },
-    "ErrorMessage31": {
+    "ErrorMessage31_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2951,7 +2951,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
-      "Name": "ErrorMessage31",
+      "Name": "ErrorMessage31_1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3164,7 +3164,7 @@
       "StyleName": "criticalErrorLabelStyle",
       "Type": "ControlInfo"
     },
-    "ErrorMessage32": {
+    "ErrorMessage32_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3232,7 +3232,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
-      "Name": "ErrorMessage32",
+      "Name": "ErrorMessage32_1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3445,7 +3445,7 @@
       "StyleName": "criticalErrorLabelStyle",
       "Type": "ControlInfo"
     },
-    "galleryTemplate2_2": {
+    "galleryTemplate2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3466,7 +3466,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "galleryTemplate2_2",
+      "Name": "galleryTemplate2_3",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3479,7 +3479,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Image2_2": {
+    "Image2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3536,7 +3536,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryImage.ID%",
-      "Name": "Image2_2",
+      "Name": "Image2_3",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3694,7 +3694,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Job Description_DataCard1": {
+    "Job Description_DataCard1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3755,7 +3755,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Job Description_DataCard1",
+      "Name": "Job Description_DataCard1_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3828,7 +3828,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Job Roles": {
+    "Job Roles_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -3848,7 +3848,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Job Roles",
+      "Name": "Job Roles_2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3896,7 +3896,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleAddButton": {
+    "JobRoleAddButton_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -3979,7 +3979,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleAddButton",
+      "Name": "JobRoleAddButton_1",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4127,7 +4127,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleBackButton": {
+    "JobRoleBackButton_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4217,7 +4217,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleBackButton",
+      "Name": "JobRoleBackButton_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4365,7 +4365,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleDeleteConfirmation": {
+    "JobRoleDeleteConfirmation_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -4383,7 +4383,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleDeleteConfirmation",
+      "Name": "JobRoleDeleteConfirmation_1",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4416,7 +4416,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "JobRoleDeleteIcon": {
+    "JobRoleDeleteIcon_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -4460,7 +4460,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleDeleteIcon",
+      "Name": "JobRoleDeleteIcon_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4588,7 +4588,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleEditButton": {
+    "JobRoleEditButton_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -4671,7 +4671,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleEditButton",
+      "Name": "JobRoleEditButton_1",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4819,7 +4819,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleGallery": {
+    "JobRoleGallery_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4854,7 +4854,7 @@
         "Height",
         "ZIndex"
       ],
-      "GalleryTemplateChildName": "galleryTemplate2_2",
+      "GalleryTemplateChildName": "galleryTemplate2_3",
       "HasDynamicProperties": false,
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -4864,7 +4864,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleGallery",
+      "Name": "JobRoleGallery_1",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4992,7 +4992,7 @@
       "StyleName": "defaultGalleryStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleHeader": {
+    "JobRoleHeader_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -5093,7 +5093,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleHeader",
+      "Name": "JobRoleHeader_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5296,7 +5296,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleRefreshButton": {
+    "JobRoleRefreshButton_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5386,7 +5386,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "JobRoleRefreshButton",
+      "Name": "JobRoleRefreshButton_1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5534,7 +5534,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "JobRoleViewer": {
+    "JobRoleViewer_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -5580,7 +5580,7 @@
       "IsLocked": false,
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
-      "Name": "JobRoleViewer",
+      "Name": "JobRoleViewer_1",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5648,7 +5648,7 @@
       "StyleName": "defaultFormViewerStyle",
       "Type": "ControlInfo"
     },
-    "Label3_4": {
+    "Label3_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -5722,7 +5722,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label3_4",
+      "Name": "Label3_6",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5930,7 +5930,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "NextArrow2_2": {
+    "NextArrow2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -5974,7 +5974,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
-      "Name": "NextArrow2_2",
+      "Name": "NextArrow2_3",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6137,7 +6137,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "Rectangle1_4": {
+    "Rectangle1_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6180,7 +6180,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Rectangle1_4",
+      "Name": "Rectangle1_6",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6268,7 +6268,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "Rectangle2_4": {
+    "Rectangle2_6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6318,7 +6318,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Rectangle2_4",
+      "Name": "Rectangle2_6",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6406,7 +6406,7 @@
       "StyleName": "defaultRectangleStyle",
       "Type": "ControlInfo"
     },
-    "SearchJobRoles": {
+    "SearchJobRoles_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6508,7 +6508,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "SearchJobRoles",
+      "Name": "SearchJobRoles_1",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6716,7 +6716,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "Separator2_2": {
+    "Separator2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -6744,7 +6744,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
-      "Name": "Separator2_2",
+      "Name": "Separator2_3",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6827,7 +6827,7 @@
       "StyleName": "primary2RectangleStyle",
       "Type": "ControlInfo"
     },
-    "StarVisible31": {
+    "StarVisible31_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6895,7 +6895,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
-      "Name": "StarVisible31",
+      "Name": "StarVisible31_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7108,7 +7108,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "StarVisible32": {
+    "StarVisible32_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -7176,7 +7176,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
-      "Name": "StarVisible32",
+      "Name": "StarVisible32_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7389,7 +7389,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "Subtitle2_2": {
+    "Subtitle2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -7436,7 +7436,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySubtitle.ID%",
-      "Name": "Subtitle2_2",
+      "Name": "Subtitle2_3",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7614,7 +7614,7 @@
       "StyleName": "subtitleLabelStyle",
       "Type": "ControlInfo"
     },
-    "Title_DataCard6": {
+    "Title_DataCard6_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -7675,7 +7675,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Title_DataCard6",
+      "Name": "Title_DataCard6_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7748,7 +7748,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Title2_2": {
+    "Title2_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -7795,7 +7795,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
-      "Name": "Title2_2",
+      "Name": "Title2_3",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7973,7 +7973,7 @@
       "StyleName": "titleLabelStyle",
       "Type": "ControlInfo"
     },
-    "Volunteer Assigned: First Name_DataCard1": {
+    "Volunteer Assigned: First Name_DataCard1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -8042,7 +8042,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Volunteer Assigned: First Name_DataCard1",
+      "Name": "Volunteer Assigned: First Name_DataCard1_1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8120,7 +8120,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Volunteer Assigned_DataCard1": {
+    "Volunteer Assigned_DataCard1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -8189,7 +8189,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Volunteer Assigned_DataCard1",
+      "Name": "Volunteer Assigned_DataCard1_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8268,5 +8268,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Job Roles"
+  "TopParentName": "Job Roles_2"
 }

@@ -17,6 +17,9 @@
           "Contingency Plans": {
             "tableName": "1527d580-2977-4e2f-8057-78a6de224537"
           },
+          "Entertainment": {
+            "tableName": "398ab257-b7f1-414d-a9dd-3555347e394f"
+          },
           "Events_1": {
             "tableName": "774d9a3d-cfea-4602-aaff-fc992d55f75a"
           },
@@ -33,7 +36,8 @@
       "Events_1",
       "Contingency Plans",
       "Location_1",
-      "Job Roles_1"
+      "Job Roles_1",
+      "Entertainment"
     ],
     "dependencies": {},
     "dependents": [],
