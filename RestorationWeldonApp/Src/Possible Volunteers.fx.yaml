@@ -141,6 +141,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1078
         ZIndex: =5
 
     LocationEditButton_1 As icon.Edit:
@@ -589,7 +590,16 @@
         Default: ="All"
         Items: =CollectVideo
         Width: =200
-        X: =937
+        X: =855
         Y: =24
         ZIndex: =17
+
+    LeftNavigationPanel_3 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_3.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_3.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_3.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_3.ExpandMenu)
+        Width: =LeftNavigationPanel_3.MenuWidth
+        Y: =12
+        ZIndex: =18
 

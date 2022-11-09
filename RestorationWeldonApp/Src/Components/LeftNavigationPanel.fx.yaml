@@ -4,7 +4,7 @@ LeftNavigationPanel As CanvasComponent:
     Height: =LeftNavigationPanel.MenuHeight
     MenuBackgroundColor: |
         =LightGray
-    MenuColor: =Purple
+    MenuColor: =RGBA(39,67,125,1)
     MenuHeight: =If(ShowMenu,LeftNavigationPanel.SetMenuHeight,NavIcon.Height)
     MenuItems: |-
         =Table(
@@ -70,6 +70,7 @@ LeftNavigationPanel As CanvasComponent:
     ZIndex: =1
 
     NavIcon As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Hamburger
         OnSelect: =Set(ShowMenu,!ShowMenu)
         X: =3

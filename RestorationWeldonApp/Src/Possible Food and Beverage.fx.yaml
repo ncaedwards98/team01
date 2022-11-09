@@ -60,6 +60,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1078
         ZIndex: =5
 
     Food_BeverageEditButton_1 As icon.Edit:
@@ -369,4 +370,13 @@
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_7 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_7.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_7.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_7.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_7.ExpandMenu)
+        Width: =LeftNavigationPanel_7.MenuWidth
+        Y: =12
+        ZIndex: =15
 

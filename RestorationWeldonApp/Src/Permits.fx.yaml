@@ -60,6 +60,7 @@ Permits As screen:
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1071
         ZIndex: =5
 
     PermitsEditButton As icon.Edit:
@@ -267,4 +268,13 @@ Permits As screen:
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_8 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_8.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_8.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_8.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_8.ExpandMenu)
+        Width: =LeftNavigationPanel_8.MenuWidth
+        Y: =12
+        ZIndex: =15
 

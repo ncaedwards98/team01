@@ -9,7 +9,14 @@
         "Children": [],
         "ControlPropertyState": [
           "Icon",
-          "Color",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Color",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "DisabledColor",
           "PressedColor",
           "HoverColor",
@@ -53,7 +60,7 @@
         "Name": "NavIcon",
         "Parent": "LeftNavigationPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 727,
+        "PublishOrderIndex": 735,
         "Rules": [
           {
             "Category": "Design",
@@ -147,7 +154,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(0, 18, 107, 1)",
+            "InvariantScript": "RGBA(255, 255, 255, 1)",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -238,7 +245,7 @@
             "Name": "galleryTemplate1",
             "Parent": "NavMenuGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 729,
+            "PublishOrderIndex": 737,
             "Rules": [
               {
                 "Category": "Design",
@@ -380,7 +387,7 @@
             "Name": "ButtonClickToNavigate",
             "Parent": "NavMenuGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 730,
+            "PublishOrderIndex": 738,
             "Rules": [
               {
                 "Category": "Data",
@@ -664,7 +671,7 @@
             "Name": "MenuIdentifier",
             "Parent": "NavMenuGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 731,
+            "PublishOrderIndex": 739,
             "Rules": [
               {
                 "Category": "Design",
@@ -851,7 +858,7 @@
             "Name": "MenuItemName",
             "Parent": "NavMenuGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 732,
+            "PublishOrderIndex": 740,
             "Rules": [
               {
                 "Category": "Data",
@@ -1199,7 +1206,7 @@
         "Name": "NavMenuGallery",
         "Parent": "LeftNavigationPanel",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 728,
+        "PublishOrderIndex": 736,
         "Rules": [
           {
             "Category": "Data",
@@ -1464,7 +1471,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638036290811382124",
+    "LastModifiedTimestamp": "638036297124204816",
     "Name": "LeftNavigationPanel",
     "Rules": [
       {
@@ -1481,7 +1488,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Purple",
+        "InvariantScript": "RGBA(39,67,125,1)",
         "Property": "MenuColor",
         "RuleProviderType": "System"
       },
@@ -1666,7 +1673,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638036290811382124",
+  "LastModifiedTimestamp": "638036297124204816",
   "Name": "a5504c24b4cc46b5a56e5e42139158db",
   "OverridableProperties": {},
   "Version": "638030910692022793"

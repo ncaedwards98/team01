@@ -653,6 +653,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1133
         ZIndex: =4
 
     VolunteersDeleteIcon As icon.Trash:

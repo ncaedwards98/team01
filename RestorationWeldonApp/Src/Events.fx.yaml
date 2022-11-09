@@ -60,6 +60,7 @@ Events As screen:
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1078
         ZIndex: =5
 
     EventEditButton As icon.Edit:
@@ -898,11 +899,13 @@ Events As screen:
             ZIndex: =13
 
     LeftNavigationPanel_1 As LeftNavigationPanel:
-        Height: =495
+        Height: =LeftNavigationPanel_1.MenuHeight
         MenuHeight: =If(ShowMenu,LeftNavigationPanel_1.SetMenuHeight,NavIcon.Height)
         MenuWidth: =If(ShowMenu,LeftNavigationPanel_1.SetMenuWidth,NavIcon.Width)
+        NavIconColor: =RGBA(255, 255, 255, 1)
         OnReset: =Set(ShowMenu, LeftNavigationPanel_1.ExpandMenu)
         Width: =LeftNavigationPanel_1.MenuWidth
+        X: =1
         Y: =12
         ZIndex: =15
 

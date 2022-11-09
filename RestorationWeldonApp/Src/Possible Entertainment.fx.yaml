@@ -60,6 +60,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1078
         ZIndex: =5
 
     EntertainmentEditButton As icon.Edit:
@@ -332,4 +333,13 @@
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_6 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_6.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_6.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_6.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_6.ExpandMenu)
+        Width: =LeftNavigationPanel_6.MenuWidth
+        Y: =12
+        ZIndex: =15
 

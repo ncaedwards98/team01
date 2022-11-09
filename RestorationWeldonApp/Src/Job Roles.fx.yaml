@@ -60,6 +60,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1071
         ZIndex: =5
 
     JobRoleEditButton As icon.Edit:
@@ -435,4 +436,13 @@
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_4 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_4.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_4.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_4.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_4.ExpandMenu)
+        Width: =LeftNavigationPanel_4.MenuWidth
+        Y: =12
+        ZIndex: =15
 

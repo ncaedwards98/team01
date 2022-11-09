@@ -60,6 +60,7 @@ Locations As screen:
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1078
         ZIndex: =5
 
     LocationEditButton As icon.Edit:
@@ -638,4 +639,13 @@ Locations As screen:
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_2 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_2.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_2.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_2.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_2.ExpandMenu)
+        Width: =LeftNavigationPanel_2.MenuWidth
+        Y: =12
+        ZIndex: =15
 

@@ -108,6 +108,7 @@
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1069
         ZIndex: =5
 
     ContigencyPlanButton As icon.Edit:
@@ -274,4 +275,13 @@
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_9 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_9.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_9.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_9.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_9.ExpandMenu)
+        Width: =LeftNavigationPanel_9.MenuWidth
+        Y: =12
+        ZIndex: =15
 

@@ -60,6 +60,7 @@ Vendors As screen:
         PaddingRight: =13
         PaddingTop: =13
         Width: =76
+        X: =1071
         ZIndex: =5
 
     VendorsEditButton As icon.Edit:
@@ -472,4 +473,13 @@ Vendors As screen:
             X: =743
             Y: =432
             ZIndex: =13
+
+    LeftNavigationPanel_5 As LeftNavigationPanel:
+        Height: =LeftNavigationPanel_5.MenuHeight
+        MenuHeight: =If(ShowMenu,LeftNavigationPanel_5.SetMenuHeight,NavIcon.Height)
+        MenuWidth: =If(ShowMenu,LeftNavigationPanel_5.SetMenuWidth,NavIcon.Width)
+        OnReset: =Set(ShowMenu, LeftNavigationPanel_5.ExpandMenu)
+        Width: =LeftNavigationPanel_5.MenuWidth
+        Y: =12
+        ZIndex: =15
 
