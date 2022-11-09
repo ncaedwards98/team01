@@ -1,34 +1,34 @@
-Vendors As screen:
+"'Possible Volunteers' As screen":
 
-    SearchVendors As text:
+    SearchVolunteers As text:
         Default: =""
         Height: =68
         HintText: ="Search items"
         PaddingLeft: =70
         Size: =21
-        Width: =App.Width
+        Width: =1366
         Y: =88
         ZIndex: =1
 
-    VendorsHeader As label:
+    VolunteersHeader As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 67, 125, 1)
         Height: =88
         Size: =28
-        Text: ="Vendors"
+        Text: ="Volunteers"
         Width: =App.Width
         ZIndex: =2
 
-    VendorsAddButton As icon.Add:
+    LocationAddButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Add
         OnSelect: |-
             =//Creates blank form to add new information
-            NewForm(VendorsEditForm);
+            NewForm(LocationEditForm);
             //navigates to the edit form
-            Navigate('Edit Vendors')
+            Navigate('Edit Location Information')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -37,11 +37,11 @@ Vendors As screen:
         X: =1287
         ZIndex: =3
 
-    VendorsRefreshButton As icon.Add:
+    VolunteersRefreshButton As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Reload
-        OnSelect: =Refresh(Vendors_1)
+        OnSelect: =Refresh(Volunteers)
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -50,7 +50,7 @@ Vendors As screen:
         X: =1147
         ZIndex: =4
 
-    VendorsBackButton As icon.Add:
+    VolunteersBackButton As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.BackArrow
@@ -62,15 +62,15 @@ Vendors As screen:
         Width: =76
         ZIndex: =5
 
-    VendorsEditButton As icon.Edit:
+    LocationEditButton_1 As icon.Edit:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Edit
         OnSelect: |-
             =//Edits Select item in list
-            EditForm(VendorsEditForm);
+            EditForm(LocationEditForm);
             //Navigates to edit screen
-            Navigate('Edit Vendors')
+            Navigate('Edit Location Information')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -79,21 +79,21 @@ Vendors As screen:
         X: =1219
         ZIndex: =6
 
-    VendorsViewer As formViewer:
-        DataSource: =Vendors_1
+    VolunteersViewer As formViewer:
+        DataSource: =Volunteers
         Height: =610
-        Item: =VendorsGallery.Selected
+        Item: =VolunteersGallery.Selected
         Width: =926
         X: =426
         Y: =158
         ZIndex: =7
 
-        Title_DataCard10 As typedDataCard.textualViewCard:
+        Title_DataCard13 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
@@ -102,7 +102,7 @@ Vendors As screen:
             Y: =0
             ZIndex: =8
 
-            DataCardKey70 As label:
+            DataCardKey91 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -112,7 +112,7 @@ Vendors As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue68 As label:
+            DataCardValue88 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
@@ -122,15 +122,15 @@ Vendors As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey70.Y + DataCardKey70.Height + 5
+                Y: =DataCardKey91.Y + DataCardKey91.Height + 5
                 ZIndex: =2
 
-        "'Vendor Type_DataCard1' As typedDataCard.textualViewCard":
+        "'First Name_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="VendorType"
-            Default: =ThisItem.'Vendor Type'
+            DataField: ="FirstName"
+            Default: =ThisItem.'First Name'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"VendorType")
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"FirstName")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -139,7 +139,7 @@ Vendors As screen:
             Y: =0
             ZIndex: =8
 
-            DataCardKey71 As label:
+            DataCardKey92 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -149,7 +149,7 @@ Vendors As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue69 As label:
+            DataCardValue89 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
@@ -159,25 +159,24 @@ Vendors As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey71.Y + DataCardKey71.Height + 5
+                Y: =DataCardKey92.Y + DataCardKey92.Height + 5
                 ZIndex: =2
 
-        "'Vendor Committed To Event_DataCard1' As typedDataCard.comboBoxViewCard":
+        "'Email Address_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="VendorCommittedToEvent"
-            Default: =ThisItem.'Vendor Committed To Event'
+            DataField: ="Email_x0020_Address"
+            Default: =ThisItem.'Email Address'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"VendorCommittedToEvent")
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"Email_x0020_Address")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =40
             Required: =false
-            Update: =DataCardValue70.Selected
             Width: =308
             X: =2
             Y: =0
             ZIndex: =8
 
-            DataCardKey72 As label:
+            DataCardKey93 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -187,52 +186,25 @@ Vendors As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue70 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Vendors_1].VendorCommittedToEvent)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Vendors_1.VendorCommittedToEvent,DataCardValue70.SearchText)
-                SelectMultiple: =false
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey72.Y + DataCardKey72.Height + 5
-                ZIndex: =2
-
-            ErrorMessage42 As label:
+            DataCardValue90 As label:
                 AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue70.Y + DataCardValue70.Height
-                ZIndex: =3
+                Y: =DataCardKey93.Y + DataCardKey93.Height + 5
+                ZIndex: =2
 
-            StarVisible42 As label:
-                Align: =Align.Center
-                Height: =DataCardKey72.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey72.Y
-                ZIndex: =4
-
-        Description_DataCard1 As typedDataCard.textualViewCard:
+        "'Phone Number_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Description"
-            Default: =ThisItem.Description
+            DataField: ="PhoneNumber"
+            Default: =ThisItem.'Phone Number'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Description")
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"PhoneNumber")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -241,7 +213,7 @@ Vendors As screen:
             Y: =1
             ZIndex: =8
 
-            DataCardKey73 As label:
+            DataCardKey94 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -251,7 +223,7 @@ Vendors As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue71 As label:
+            DataCardValue91 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
@@ -261,25 +233,24 @@ Vendors As screen:
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                Y: =DataCardKey94.Y + DataCardKey94.Height + 5
                 ZIndex: =2
 
-        Contact_DataCard1 As typedDataCard.comboBoxViewCard:
+        Skills_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Contact"
-            Default: =ThisItem.Contact
+            DataField: ="Skills"
+            Default: =ThisItem.Skills
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Contact")
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"Skills")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =40
             Required: =false
-            Update: =DataCardValue72.Selected
             Width: =308
             X: =1
             Y: =1
             ZIndex: =8
 
-            DataCardKey74 As label:
+            DataCardKey95 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -289,23 +260,97 @@ Vendors As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue72 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
+            DataCardValue92 As label:
+                AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Vendors_1].Contact)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices(Vendors_1.Contact,DataCardValue72.SearchText)
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey74.Y + DataCardKey74.Height + 5
+                Y: =DataCardKey95.Y + DataCardKey95.Height + 5
                 ZIndex: =2
 
-            ErrorMessage43 As label:
+        "'Preferred Job_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="PreferredJob"
+            Default: =ThisItem.'Preferred Job'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"PreferredJob")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =308
+            X: =2
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey96 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue93 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey96.Y + DataCardKey96.Height + 5
+                ZIndex: =2
+
+        "'Previous Event Performance_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="PreviousEventPerformance"
+            Default: =ThisItem.'Previous Event Performance'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"PreviousEventPerformance")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue94.Selected
+            Width: =308
+            X: =0
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey97 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue94 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Volunteers].PreviousEventPerformance)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Volunteers.PreviousEventPerformance,DataCardValue94.SearchText)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey97.Y + DataCardKey97.Height + 5
+                ZIndex: =2
+
+            ErrorMessage60 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -317,22 +362,87 @@ Vendors As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue72.Y + DataCardValue72.Height
+                Y: =DataCardValue94.Y + DataCardValue94.Height
                 ZIndex: =3
 
-            StarVisible43 As label:
+            StarVisible60 As label:
                 Align: =Align.Center
-                Height: =DataCardKey74.Height
+                Height: =DataCardKey97.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey74.Y
+                Y: =DataCardKey97.Y
                 ZIndex: =4
 
-    "VendorsGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        "'Volunteer Activity_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="VolunteerActivity"
+            Default: =ThisItem.'Volunteer Activity'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Volunteers],DataSourceInfo.DisplayName,"VolunteerActivity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue95.Selected
+            Width: =308
+            X: =1
+            Y: =2
+            ZIndex: =8
+
+            DataCardKey98 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue95 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Volunteers].VolunteerActivity)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Volunteers.VolunteerActivity,DataCardValue95.SearchText)
+                SelectMultiple: =false
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey98.Y + DataCardKey98.Height + 5
+                ZIndex: =2
+
+            ErrorMessage61 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue95.Y + DataCardValue95.Height
+                ZIndex: =3
+
+            StarVisible61 As label:
+                Align: =Align.Center
+                Height: =DataCardKey98.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey98.Y
+                ZIndex: =4
+
+    "VolunteersGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =610
-        Items: =SortByColumns(Filter([@Vendors_1], StartsWith(Title, SearchVendors.Text)), "Title")
+        Items: =SortByColumns(Filter([@Volunteers], StartsWith(Title, SearchVolunteers.Text)), "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
@@ -341,7 +451,7 @@ Vendors As screen:
         Y: =158
         ZIndex: =8
 
-        Image2_4 As image:
+        Image2_5 As image:
             Height: =128
             Image: =
             OnSelect: =Select(Parent)
@@ -350,7 +460,7 @@ Vendors As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Title2_4 As label:
+        Title2_5 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -359,26 +469,26 @@ Vendors As screen:
             PaddingTop: =0
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image2_4.Width - 104
-            X: =Image2_4.X + Image2_4.Width + 24
+            Width: =Parent.TemplateWidth - Image2_5.Width - 104
+            X: =Image2_5.X + Image2_5.Width + 24
             Y: =44
             ZIndex: =2
 
-        Subtitle2_4 As label:
+        Subtitle2_5 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Vendor Type'
+            Text: =ThisItem.'First Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title2_4.Width
-            X: =Title2_4.X
-            Y: =Title2_4.Y + Title2_4.Height + 4
+            Width: =Title2_5.Width
+            X: =Title2_5.X
+            Y: =Title2_5.Y + Title2_5.Height + 4
             ZIndex: =3
 
-        NextArrow2_4 As icon.ChevronRight:
+        NextArrow2_5 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -394,45 +504,51 @@ Vendors As screen:
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator2_4 As rectangle:
+        Separator2_5 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-        JobRoleDeleteIcon_2 As icon.Trash:
+        LocationDeleteIcon_2 As icon.Trash:
             Icon: =Icon.Trash
             OnSelect: =Set(varShowDelete, true)
             X: =40
             Y: =40
             ZIndex: =6
 
-    VendorsSearchIcon As icon.Search:
-        Height: =70
+        Label4 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Volunteer Activity'.Value
+            X: =168
+            Y: =116
+            ZIndex: =7
+
+    SearchIconVolunteers As icon.Search:
         Icon: =Icon.Search
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
         PaddingTop: =13
-        Y: =88
+        Y: =92
         ZIndex: =14
 
-    VendorsDeleteConfirmation As group:
+    VolunteersDeleteConfirmation As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =14
 
-        Rectangle1_8 As rectangle:
+        Rectangle1_10 As rectangle:
             Fill: =RGBA(169,169,169,.75)
             Height: =768
             Visible: =varShowDelete
             Width: =1366
             ZIndex: =9
 
-        Rectangle2_8 As rectangle:
+        Rectangle2_10 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
             Height: =310
@@ -442,21 +558,21 @@ Vendors As screen:
             Y: =215
             ZIndex: =10
 
-        Label3_8 As label:
+        Label3_10 As label:
             Align: =Align.Center
             Height: =91
-            Text: ="Are you sure you want to delete " & VendorsGallery.Selected.Title & "?"
+            Text: ="Are you sure you want to delete " & VolunteersGallery.Selected.Title & "?"
             Visible: =varShowDelete
             Width: =488
             X: =439
             Y: =238
             ZIndex: =11
 
-        Button1_8 As button:
+        Button1_10 As button:
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
-                Remove(Vendors_1, VendorsGallery.Selected);
+                Remove(Volunteers, VolunteersGallery.Selected);
                 //exits out of delete confirmation interface
                 Set(varShowDelete, false)
             Text: ="Delete"
@@ -465,7 +581,7 @@ Vendors As screen:
             Y: =432
             ZIndex: =12
 
-        Button2_8 As button:
+        Button2_10 As button:
             OnSelect: =Set(varShowDelete, false)
             Text: ="Cancel"
             Visible: =varShowDelete

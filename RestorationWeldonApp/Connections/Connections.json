@@ -31,6 +31,9 @@
           },
           "Vendors_1": {
             "tableName": "9a517350-7d77-4afd-b17f-f96d46fc7d72"
+          },
+          "Volunteers": {
+            "tableName": "41baf5db-7a90-43ed-bb56-0974cc700268"
           }
         }
       }
@@ -41,7 +44,8 @@
       "Location_1",
       "Job Roles_1",
       "Entertainment",
-      "Vendors_1"
+      "Vendors_1",
+      "Volunteers"
     ],
     "dependencies": {},
     "dependents": [],

@@ -1,32 +1,32 @@
 "'Edit Vendors' As screen":
 
-    EntertainmentEditForm_1 As form:
+    VendorsEditForm As form:
         BorderThickness: =1
-        DataSource: =Entertainment
+        DataSource: =Vendors_1
         Height: =680
-        Item: =EntertainmentGallery.Selected
+        Item: =VendorsGallery.Selected
         Width: |
             =App.Width
         Y: =88
         ZIndex: =1
 
-        Title_DataCard9_1 As typedDataCard.textualEditCard:
+        Title_DataCard12 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Entertainment],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Entertainment], DataSourceInfo.MaxLength, "Title")
+            MaxLength: =DataSourceInfo([@Vendors_1], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue65_1.Text
+            Update: =DataCardValue82.Text
             Width: =455
             X: =0
             Y: =0
             ZIndex: =2
 
-            DataCardKey67_1 As label:
+            DataCardKey85 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -36,7 +36,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue65_1 As text:
+            DataCardValue82 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -50,10 +50,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey67_1.Y + DataCardKey67_1.Height + 5
+                Y: =DataCardKey85.Y + DataCardKey85.Height + 5
                 ZIndex: =2
 
-            ErrorMessage39_1 As label:
+            ErrorMessage54 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -65,35 +65,36 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue65_1.Y + DataCardValue65_1.Height
+                Y: =DataCardValue82.Y + DataCardValue82.Height
                 ZIndex: =3
 
-            StarVisible39_1 As label:
+            StarVisible54 As label:
                 Align: =Align.Center
-                Height: =DataCardKey67_1.Height
+                Height: =DataCardKey85.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey67_1.Y
+                Y: =DataCardKey85.Y
                 ZIndex: =4
 
-        "'Entertainment Vendor_DataCard2_1' As typedDataCard.comboBoxEditCard":
+        "'Vendor Type_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="EntertainmentVendor"
-            Default: =ThisItem.'Entertainment Vendor'
+            DataField: ="VendorType"
+            Default: =ThisItem.'Vendor Type'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Entertainment],DataSourceInfo.DisplayName,"EntertainmentVendor")
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"VendorType")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
+            MaxLength: =DataSourceInfo([@Vendors_1], DataSourceInfo.MaxLength, "VendorType")
             Required: =false
-            Update: =DataCardValue66_1.Selected
+            Update: =DataCardValue83.Text
             Width: =455
             X: =1
             Y: =0
             ZIndex: =2
 
-            DataCardKey68_1 As label:
+            DataCardKey86 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -103,23 +104,24 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue66_1 As combobox:
+            DataCardValue83 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
+                Default: =Parent.Default
+                DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Entertainment].EntertainmentVendor)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices(Entertainment.EntertainmentVendor,DataCardValue66_1.SearchText)
-                SelectMultiple: =false
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey68_1.Y + DataCardKey68_1.Height + 5
+                Y: =DataCardKey86.Y + DataCardKey86.Height + 5
                 ZIndex: =2
 
-            ErrorMessage40_1 As label:
+            ErrorMessage55 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -131,35 +133,35 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue66_1.Y + DataCardValue66_1.Height
+                Y: =DataCardValue83.Y + DataCardValue83.Height
                 ZIndex: =3
 
-            StarVisible40_1 As label:
+            StarVisible55 As label:
                 Align: =Align.Center
-                Height: =DataCardKey68_1.Height
+                Height: =DataCardKey86.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey68_1.Y
+                Y: =DataCardKey86.Y
                 ZIndex: =4
 
-        Attachments_DataCard4_1 As typedDataCard.attachmentsEditCard:
+        "'Vendor Committed To Event_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
+            DataField: ="VendorCommittedToEvent"
+            Default: =ThisItem.'Vendor Committed To Event'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Entertainment],DataSourceInfo.DisplayName,"{Attachments}")
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"VendorCommittedToEvent")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue67_1.Attachments
+            Update: =DataCardValue84.Selected
             Width: =455
             X: =2
             Y: =0
             ZIndex: =2
 
-            DataCardKey69_1 As label:
+            DataCardKey87 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -169,7 +171,208 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue67_1 As attachments:
+            DataCardValue84 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Vendors_1].VendorCommittedToEvent)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Vendors_1.VendorCommittedToEvent,DataCardValue84.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey87.Y + DataCardKey87.Height + 5
+                ZIndex: =2
+
+            ErrorMessage56 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue84.Y + DataCardValue84.Height
+                ZIndex: =3
+
+            StarVisible56 As label:
+                Align: =Align.Center
+                Height: =DataCardKey87.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey87.Y
+                ZIndex: =4
+
+        Description_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Description"
+            Default: =ThisItem.Description
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Vendors_1], DataSourceInfo.MaxLength, "Description")
+            Required: =false
+            Update: =DataCardValue85.Text
+            Width: =455
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey88 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue85 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey88.Y + DataCardKey88.Height + 5
+                ZIndex: =2
+
+            ErrorMessage57 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue85.Y + DataCardValue85.Height
+                ZIndex: =3
+
+            StarVisible57 As label:
+                Align: =Align.Center
+                Height: =DataCardKey88.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey88.Y
+                ZIndex: =4
+
+        Contact_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Contact"
+            Default: =ThisItem.Contact
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"Contact")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue86.Selected
+            Width: =455
+            X: =1
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey89 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue86 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@Vendors_1].Contact)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices(Vendors_1.Contact,DataCardValue86.SearchText)
+                SelectMultiple: =false
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey89.Y + DataCardKey89.Height + 5
+                ZIndex: =2
+
+            ErrorMessage58 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue86.Y + DataCardValue86.Height
+                ZIndex: =3
+
+            StarVisible58 As label:
+                Align: =Align.Center
+                Height: =DataCardKey89.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey89.Y
+                ZIndex: =4
+
+        Attachments_DataCard6 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Vendors_1],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue87.Attachments
+            Width: =455
+            X: =2
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey90 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue87 As attachments:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 IsInDataCard: =true
@@ -181,10 +384,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey69_1.Y + DataCardKey69_1.Height + 5
+                Y: =DataCardKey90.Y + DataCardKey90.Height + 5
                 ZIndex: =2
 
-            ErrorMessage41_1 As label:
+            ErrorMessage59 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -196,17 +399,17 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue67_1.Y + DataCardValue67_1.Height
+                Y: =DataCardValue87.Y + DataCardValue87.Height
                 ZIndex: =3
 
-            StarVisible41_1 As label:
+            StarVisible59 As label:
                 Align: =Align.Center
-                Height: =DataCardKey69_1.Height
+                Height: =DataCardKey90.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey69_1.Y
+                Y: =DataCardKey90.Y
                 ZIndex: =4
 
     EntertainmentEditHeader_1 As label:
@@ -215,7 +418,7 @@
         Fill: =RGBA(39, 67, 125, 1)
         Height: =88
         Size: =28
-        Text: ="Edit/New Entertainment"
+        Text: ="Edit/New Vendors"
         Width: |
             =App.Width
         ZIndex: =2
@@ -226,7 +429,7 @@
         Icon: =Icon.Save
         OnSelect: |-
             =//saves changes to list
-            SubmitForm(EntertainmentEditForm_1);
+            SubmitForm(VendorsEditForm);
             //goes back to previous screen
             Back()
         PaddingBottom: =13
@@ -249,7 +452,7 @@
         Width: =76
         ZIndex: =4
 
-    EditEntertainmentDeleteIcon_1 As icon.Trash:
+    EditVendorsDeleteIcon As icon.Trash:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Trash
@@ -262,7 +465,7 @@
         X: =1209
         ZIndex: =10
 
-    EditEntertainmentConfirmation_1 As group:
+    EditVendorsConfirmation As group:
         Height: =5
         Width: =5
         X: =40
@@ -300,7 +503,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
-                Remove(Entertainment, EntertainmentGallery.Selected);
+                Remove(Vendors_1, VendorsGallery.Selected);
                 //exits out of delete confirmation interface
                 Set(varShowDelete, false)
             Text: ="Delete"
