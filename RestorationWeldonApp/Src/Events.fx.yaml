@@ -81,7 +81,7 @@ Events As screen:
 
     EventViewer As formViewer:
         DataSource: =Events_1
-        Height: =488
+        Height: =610
         Item: =EventGallery.Selected
         Width: =926
         X: =426
@@ -754,7 +754,8 @@ Events As screen:
                 ZIndex: =4
 
     "EventGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Items: =Events_1
+        Height: =610
+        Items: =SortByColumns(Filter([@Events_1], StartsWith(Title, SearchEvents.Text)), "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0

@@ -4024,7 +4024,7 @@
       "StyleName": "defaultAttachmentsStyle",
       "Type": "ControlInfo"
     },
-    "Edit Job Roles_1": {
+    "Edit Possible Entertainment": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -4044,18 +4044,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Edit Job Roles_1",
+      "Name": "Edit Possible Entertainment",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4065,17 +4060,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -4086,6 +4076,16 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -9019,5 +9019,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Edit Job Roles_1"
+  "TopParentName": "Edit Possible Entertainment"
 }

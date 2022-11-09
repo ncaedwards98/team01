@@ -498,7 +498,7 @@ Locations As screen:
                 ZIndex: =2
 
     "LocationGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Items: =Location_1
+        Items: =SortByColumns(Filter([@Location_1], StartsWith(Title, SearchLocations.Text)), "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
