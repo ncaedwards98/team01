@@ -1,0 +1,277 @@
+"'Contigency Plan' As screen":
+
+    SearchContigencyPlan As text:
+        Default: =""
+        Height: =68
+        HintText: ="Search items"
+        PaddingLeft: =70
+        Size: =21
+        Width: =App.Width
+        Y: =88
+        ZIndex: =1
+
+    "ContigencyPlanGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =610
+        Items: =Search('Contingency Plans', SearchContigencyPlan.Text, "Title")
+        Layout: =Layout.Vertical
+        TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
+        TemplatePadding: =0
+        TemplateSize: =Min(96, Self.Height - 60)
+        Width: =407
+        Y: =158
+        ZIndex: =1
+
+        Title6 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow6 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator8 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+    ContigencyPlanHeader As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(39, 67, 125, 1)
+        Height: =88
+        Size: =28
+        Text: ="Contigency Plans"
+        Width: =App.Width
+        ZIndex: =2
+
+    ContigencyPlanAddButton As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.Add
+        OnSelect: |-
+            =//Creates blank form to add new information
+            NewForm(ContigencyPlanEditForm);
+            //navigates to the edit form
+            Navigate('Edit Contigency Plan')
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =79
+        X: =1287
+        ZIndex: =3
+
+    ContigencyPlanRefreshButton As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.Reload
+        OnSelect: =Refresh('Contingency Plans')
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =72
+        X: =1147
+        ZIndex: =4
+
+    ContigencyPlanBackButton As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.BackArrow
+        OnSelect: =Set(varBack, Back(Fade))
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =76
+        ZIndex: =5
+
+    ContigencyPlanButton As icon.Edit:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =88
+        Icon: =Icon.Edit
+        OnSelect: |-
+            =//Edits Select item in list
+            EditForm(ContigencyPlanEditForm);
+            //Navigates to edit screen
+            Navigate('Edit Contigency Plan')
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Width: =65
+        X: =1219
+        ZIndex: =6
+
+    ContigencyPlanViewer As formViewer:
+        DataSource: ='Contingency Plans'
+        Height: =610
+        Item: =ContigencyPlanGallery.Selected
+        Width: =926
+        X: =426
+        Y: =158
+        ZIndex: =7
+
+        Title_DataCard20 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Contingency Plans'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =308
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey121 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue118 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey121.Y + DataCardKey121.Height + 5
+                ZIndex: =2
+
+        Plan_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Plan"
+            Default: =ThisItem.Plan
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Contingency Plans'],DataSourceInfo.DisplayName,"Plan")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =544
+            Required: =false
+            Width: =616
+            X: =1
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey122 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue119 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey122.Y + DataCardKey122.Height + 5
+                ZIndex: =2
+
+    ContigencyPlanSearchIcon As icon.Search:
+        Height: =70
+        Icon: =Icon.Search
+        PaddingBottom: =13
+        PaddingLeft: =13
+        PaddingRight: =13
+        PaddingTop: =13
+        Y: =88
+        ZIndex: =14
+
+    ContigencyPlanDeleteConfirmation As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Rectangle1_16 As rectangle:
+            Fill: =RGBA(169,169,169,.75)
+            Height: =768
+            Visible: =varShowDelete
+            Width: =1366
+            ZIndex: =9
+
+        Rectangle2_16 As rectangle:
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =310
+            Visible: =varShowDelete
+            Width: =526
+            X: =420
+            Y: =215
+            ZIndex: =10
+
+        Label3_16 As label:
+            Align: =Align.Center
+            Height: =91
+            Text: ="Are you sure you want to delete " & ContigencyPlanGallery.Selected.Title & "?"
+            Visible: =varShowDelete
+            Width: =488
+            X: =439
+            Y: =238
+            ZIndex: =11
+
+        Button1_16 As button:
+            Fill: =RGBA(168, 0, 0, 1)
+            OnSelect: |-
+                =//deletes selected item
+                Remove('Contingency Plans', ContigencyPlanGallery.Selected);
+                //exits out of delete confirmation interface
+                Set(varShowDelete, false)
+            Text: ="Delete"
+            Visible: =varShowDelete
+            X: =464
+            Y: =432
+            ZIndex: =12
+
+        Button2_16 As button:
+            OnSelect: =Set(varShowDelete, false)
+            Text: ="Cancel"
+            Visible: =varShowDelete
+            X: =743
+            Y: =432
+            ZIndex: =13
+

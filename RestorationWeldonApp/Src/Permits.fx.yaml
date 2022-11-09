@@ -79,7 +79,7 @@ Permits As screen:
         X: =1219
         ZIndex: =6
 
-    Food_BeverageViewer_1 As formViewer:
+    PermitViewer As formViewer:
         DataSource: =Permits_1
         Height: =610
         Item: =PermitsGallery.Selected
