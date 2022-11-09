@@ -3,7 +3,7 @@
     EventEditForm As form:
         BorderThickness: =1
         DataSource: =Events_1
-        Height: =565
+        Height: =680
         Item: =EventGallery.Selected
         Width: |
             =App.Width

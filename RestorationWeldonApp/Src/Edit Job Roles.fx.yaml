@@ -3,7 +3,7 @@
     JobRoleEditForm As form:
         BorderThickness: =1
         DataSource: ='Job Roles_1'
-        Height: =565
+        Height: =680
         Item: =JobRoleGallery.Selected
         Width: |
             =App.Width

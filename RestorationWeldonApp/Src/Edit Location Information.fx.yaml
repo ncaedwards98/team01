@@ -3,7 +3,7 @@
     LocationEditForm As form:
         BorderThickness: =1
         DataSource: =Location_1
-        Height: =565
+        Height: =680
         Item: =LocationGallery.Selected
         Width: |
             =App.Width

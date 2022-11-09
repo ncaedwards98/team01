@@ -3074,6 +3074,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Vendors.EntertainmentRefreshButton_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentRefreshButton_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentRefreshButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Possible Entertainment'.EntertainmentViewer.'Entertainment Vendor_DataCard1'.DataCardValue64.AccessibleLabel"
                 }
               ],
@@ -3164,19 +3194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1"
+                "type": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon"
               }
             }
           ],
@@ -3194,19 +3224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1.TabIndex"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1.TabIndex",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EditJobRoleDeleteIcon_1"
+                "type": "'Edit Possible Entertainment'.EditEntertainmentDeleteIcon"
               }
             }
           ],
@@ -3224,19 +3254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveJobRoleButton_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveEntertainmentButton.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveJobRoleButton_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveEntertainmentButton.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.SaveJobRoleButton_1"
+                "type": "'Edit Possible Entertainment'.SaveEntertainmentButton"
               }
             }
           ],
@@ -3254,19 +3284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveJobRoleButton_1.TabIndex"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveEntertainmentButton.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveJobRoleButton_1.TabIndex",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.SaveEntertainmentButton.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.SaveJobRoleButton_1"
+                "type": "'Edit Possible Entertainment'.SaveEntertainmentButton"
               }
             }
           ],
@@ -3284,19 +3314,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard7_1.DataCardValue58_1.AccessibleLabel"
+                  "fullyQualifiedName": "Vendors.EntertainmentBackButton_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard7_1.DataCardValue58_1.AccessibleLabel",
+                  "fullyQualifiedName": "Vendors.EntertainmentBackButton_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentBackButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentBackButton_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentBackButton_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard7_1.DataCardValue58_1"
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentBackButton_1"
               }
             }
           ],
@@ -3314,19 +3374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned: First Name_DataCard2_1'.DataCardValue61_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard4.DataCardValue67.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned: First Name_DataCard2_1'.DataCardValue61_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard4.DataCardValue67.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned: First Name_DataCard2_1'.DataCardValue61_1"
+                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard4.DataCardValue67"
               }
             }
           ],
@@ -3344,19 +3404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned_DataCard2_1'.DataCardValue60_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Entertainment Vendor_DataCard2'.DataCardValue66.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned_DataCard2_1'.DataCardValue60_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Entertainment Vendor_DataCard2'.DataCardValue66.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.'Volunteer Assigned_DataCard2_1'.DataCardValue60_1"
+                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.'Entertainment Vendor_DataCard2'.DataCardValue66"
               }
             }
           ],
@@ -3374,19 +3434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Job Description_DataCard2_1'.DataCardValue59_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard9.DataCardValue65.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.'Job Description_DataCard2_1'.DataCardValue59_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard9.DataCardValue65.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.'Job Description_DataCard2_1'.DataCardValue59_1"
+                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.Title_DataCard9.DataCardValue65"
               }
             }
           ],
@@ -3404,19 +3464,589 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard3_1.DataCardValue62_1.AccessibleLabel"
+                  "fullyQualifiedName": "Vendors.EntertainmentRefreshButton_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard3_1.DataCardValue62_1.AccessibleLabel",
+                  "fullyQualifiedName": "Vendors.EntertainmentRefreshButton_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentRefreshButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentEditButton_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentEditButton_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Edit Possible Entertainment",
-                "type": "'Edit Possible Entertainment'.EntertainmentEditForm.Attachments_DataCard3_1.DataCardValue62_1"
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentEditButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentEditButton_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentEditButton_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentEditButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentAddButton_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentAddButton_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentAddButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentAddButton_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentAddButton_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentAddButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.SearchVendors.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.SearchVendors.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.SearchVendors"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentGallery_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentGallery_1.JobRoleDeleteIcon_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Vendors.EntertainmentViewer_1.'Entertainment Vendor_DataCard1_1'.DataCardValue64_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Vendors.EntertainmentViewer_1.'Entertainment Vendor_DataCard1_1'.DataCardValue64_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Vendors",
+                "type": "Vendors.EntertainmentViewer_1.'Entertainment Vendor_DataCard1_1'.DataCardValue64_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.BackButton_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.BackButton_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.BackButton_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.BackButton_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.BackButton_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.BackButton_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EditEntertainmentDeleteIcon_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EditEntertainmentDeleteIcon_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EditEntertainmentDeleteIcon_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EditEntertainmentDeleteIcon_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EditEntertainmentDeleteIcon_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EditEntertainmentDeleteIcon_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.SaveEntertainmentButton_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.SaveEntertainmentButton_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.SaveEntertainmentButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.SaveEntertainmentButton_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.SaveEntertainmentButton_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.SaveEntertainmentButton_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Title_DataCard9_1.DataCardValue65_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Title_DataCard9_1.DataCardValue65_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EntertainmentEditForm_1.Title_DataCard9_1.DataCardValue65_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.'Entertainment Vendor_DataCard2_1'.DataCardValue66_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.'Entertainment Vendor_DataCard2_1'.DataCardValue66_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EntertainmentEditForm_1.'Entertainment Vendor_DataCard2_1'.DataCardValue66_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Attachments_DataCard4_1.DataCardValue67_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Attachments_DataCard4_1.DataCardValue67_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EntertainmentEditForm_1.Attachments_DataCard4_1.DataCardValue67_1"
               }
             }
           ],
@@ -3687,6 +4317,66 @@
                 "member": "Text",
                 "module": "Edit Possible Entertainment",
                 "type": "'Edit Possible Entertainment'.Label3_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.EntertainmentEditForm_1.Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Item",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.EntertainmentEditForm_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Edit Vendors'.Label3_9.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Edit Vendors'.Label3_9.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Edit Vendors",
+                "type": "'Edit Vendors'.Label3_9"
               }
             }
           ],

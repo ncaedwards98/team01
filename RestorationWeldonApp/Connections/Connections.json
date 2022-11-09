@@ -28,6 +28,9 @@
           },
           "Location_1": {
             "tableName": "8a730d96-2191-47d6-a8fb-35833d769570"
+          },
+          "Vendors_1": {
+            "tableName": "9a517350-7d77-4afd-b17f-f96d46fc7d72"
           }
         }
       }
@@ -37,7 +40,8 @@
       "Contingency Plans",
       "Location_1",
       "Job Roles_1",
-      "Entertainment"
+      "Entertainment",
+      "Vendors_1"
     ],
     "dependencies": {},
     "dependents": [],

@@ -1,6 +1,6 @@
-"'Possible Entertainment' As screen":
+Vendors As screen:
 
-    SearchEntertainment As text:
+    SearchVendors As text:
         Default: =""
         Height: =68
         HintText: ="Search items"
@@ -10,17 +10,17 @@
         Y: =88
         ZIndex: =1
 
-    EntertainmentHeader As label:
+    VendorsHeader As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 67, 125, 1)
         Height: =88
         Size: =28
-        Text: ="Entertainment"
+        Text: ="Vendors"
         Width: =App.Width
         ZIndex: =2
 
-    EntertainmentAddButton As icon.Add:
+    EntertainmentAddButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Add
@@ -37,7 +37,7 @@
         X: =1287
         ZIndex: =3
 
-    EntertainmentRefreshButton As icon.Add:
+    EntertainmentRefreshButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Reload
@@ -50,7 +50,7 @@
         X: =1147
         ZIndex: =4
 
-    EntertainmentBackButton As icon.Add:
+    EntertainmentBackButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.BackArrow
@@ -62,7 +62,7 @@
         Width: =76
         ZIndex: =5
 
-    EntertainmentEditButton As icon.Edit:
+    EntertainmentEditButton_1 As icon.Edit:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Edit
@@ -79,16 +79,16 @@
         X: =1219
         ZIndex: =6
 
-    EntertainmentViewer As formViewer:
+    EntertainmentViewer_1 As formViewer:
         DataSource: =Entertainment
         Height: =610
-        Item: =EntertainmentGallery.Selected
+        Item: =EntertainmentGallery_1.Selected
         Width: =926
         X: =426
         Y: =158
         ZIndex: =7
 
-        Title_DataCard8 As typedDataCard.textualViewCard:
+        Title_DataCard8_1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -102,7 +102,7 @@
             Y: =0
             ZIndex: =8
 
-            DataCardKey65 As label:
+            DataCardKey65_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -112,7 +112,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue63 As label:
+            DataCardValue63_1 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
@@ -122,10 +122,10 @@
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey65.Y + DataCardKey65.Height + 5
+                Y: =DataCardKey65_1.Y + DataCardKey65_1.Height + 5
                 ZIndex: =2
 
-        "'Entertainment Vendor_DataCard1' As typedDataCard.comboBoxViewCard":
+        "'Entertainment Vendor_DataCard1_1' As typedDataCard.comboBoxViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="EntertainmentVendor"
             Default: =ThisItem.'Entertainment Vendor'
@@ -134,13 +134,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue64.Selected
+            Update: =DataCardValue64_1.Selected
             Width: =308
             X: =1
             Y: =0
             ZIndex: =8
 
-            DataCardKey66 As label:
+            DataCardKey66_1 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -150,7 +150,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue64 As combobox:
+            DataCardValue64_1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -158,14 +158,14 @@
                 Items: =Choices([@Entertainment].EntertainmentVendor)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Entertainment.EntertainmentVendor,DataCardValue64.SearchText)
+                SearchItems: =Choices(Entertainment.EntertainmentVendor,DataCardValue64_1.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                Y: =DataCardKey66_1.Y + DataCardKey66_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage38 As label:
+            ErrorMessage38_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -177,22 +177,22 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue64.Y + DataCardValue64.Height
+                Y: =DataCardValue64_1.Y + DataCardValue64_1.Height
                 ZIndex: =3
 
-            StarVisible38 As label:
+            StarVisible38_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey66.Height
+                Height: =DataCardKey66_1.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey66.Y
+                Y: =DataCardKey66_1.Y
                 ZIndex: =4
 
-    "EntertainmentGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+    "EntertainmentGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =610
-        Items: =SortByColumns(Filter([@Entertainment], StartsWith(Title, SearchEntertainment.Text)), "Title")
+        Items: =SortByColumns(Filter([@Entertainment], StartsWith(Title, SearchVendors.Text)), "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
@@ -201,7 +201,7 @@
         Y: =158
         ZIndex: =8
 
-        Image2_3 As image:
+        Image2_4 As image:
             Height: =128
             Image: =
             OnSelect: =Select(Parent)
@@ -210,7 +210,7 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Title2_3 As label:
+        Title2_4 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -219,12 +219,12 @@
             PaddingTop: =0
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image2_3.Width - 104
-            X: =Image2_3.X + Image2_3.Width + 24
+            Width: =Parent.TemplateWidth - Image2_4.Width - 104
+            X: =Image2_4.X + Image2_4.Width + 24
             Y: =44
             ZIndex: =2
 
-        Subtitle2_3 As label:
+        Subtitle2_4 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -233,12 +233,12 @@
             PaddingTop: =0
             Text: =ThisItem.'Entertainment Vendor'.Value
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title2_3.Width
-            X: =Title2_3.X
-            Y: =Title2_3.Y + Title2_3.Height + 4
+            Width: =Title2_4.Width
+            X: =Title2_4.X
+            Y: =Title2_4.Y + Title2_4.Height + 4
             ZIndex: =3
 
-        NextArrow2_3 As icon.ChevronRight:
+        NextArrow2_4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -254,21 +254,21 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator2_3 As rectangle:
+        Separator2_4 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-        JobRoleDeleteIcon_1 As icon.Trash:
+        JobRoleDeleteIcon_2 As icon.Trash:
             Icon: =Icon.Trash
             OnSelect: =Set(varShowDelete, true)
             X: =40
             Y: =40
             ZIndex: =6
 
-    EntertainmentSearchIcon As icon.Search:
+    EntertainmentSearchIcon_1 As icon.Search:
         Height: =70
         Icon: =Icon.Search
         PaddingBottom: =13
@@ -278,21 +278,21 @@
         Y: =88
         ZIndex: =14
 
-    EntertainmentDeleteConfirmation As group:
+    EntertainmentDeleteConfirmation_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =14
 
-        Rectangle1_6 As rectangle:
+        Rectangle1_8 As rectangle:
             Fill: =RGBA(169,169,169,.75)
             Height: =768
             Visible: =varShowDelete
             Width: =1366
             ZIndex: =9
 
-        Rectangle2_6 As rectangle:
+        Rectangle2_8 As rectangle:
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
             Height: =310
@@ -302,21 +302,21 @@
             Y: =215
             ZIndex: =10
 
-        Label3_6 As label:
+        Label3_8 As label:
             Align: =Align.Center
             Height: =91
-            Text: ="Are you sure you want to delete " & EntertainmentGallery.Selected.Title & "?"
+            Text: ="Are you sure you want to delete " & EntertainmentGallery_1.Selected.Title & "?"
             Visible: =varShowDelete
             Width: =488
             X: =439
             Y: =238
             ZIndex: =11
 
-        Button1_6 As button:
+        Button1_8 As button:
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
-                Remove(Entertainment, EntertainmentGallery.Selected);
+                Remove(Entertainment, EntertainmentGallery_1.Selected);
                 //exits out of delete confirmation interface
                 Set(varShowDelete, false)
             Text: ="Delete"
@@ -325,7 +325,7 @@
             Y: =432
             ZIndex: =12
 
-        Button2_6 As button:
+        Button2_8 As button:
             OnSelect: =Set(varShowDelete, false)
             Text: ="Cancel"
             Visible: =varShowDelete
