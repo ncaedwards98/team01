@@ -1,6 +1,6 @@
-"'Possible Entertainment_1' As screen":
+"'Possible Food and Beverage' As screen":
 
-    SearchEntertainment_1 As text:
+    SearchFood_Beverage As text:
         Default: =""
         Height: =68
         HintText: ="Search items"
@@ -10,25 +10,25 @@
         Y: =88
         ZIndex: =1
 
-    EntertainmentHeader_1 As label:
+    Food_BeverageHeader_1 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(39, 67, 125, 1)
         Height: =88
         Size: =28
-        Text: ="Entertainment"
+        Text: ="Food and Beverage"
         Width: =App.Width
         ZIndex: =2
 
-    EntertainmentAddButton_1 As icon.Add:
+    Food_BeverageAddButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Add
         OnSelect: |-
             =//Creates blank form to add new information
-            NewForm(EntertainmentEditForm);
+            NewForm(Food_BeverageEditForm);
             //navigates to the edit form
-            Navigate('Edit Possible Entertainment')
+            Navigate('Edit Food and Beverage')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -37,11 +37,11 @@
         X: =1287
         ZIndex: =3
 
-    EntertainmentRefreshButton_1 As icon.Add:
+    Food_BeverageRefreshButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Reload
-        OnSelect: =Refresh(Entertainment)
+        OnSelect: =Refresh('Food and Beverage')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -50,7 +50,7 @@
         X: =1147
         ZIndex: =4
 
-    EntertainmentBackButton_1 As icon.Add:
+    Food_BeverageBackButton_1 As icon.Add:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.BackArrow
@@ -62,15 +62,15 @@
         Width: =76
         ZIndex: =5
 
-    EntertainmentEditButton_1 As icon.Edit:
+    Food_BeverageEditButton_1 As icon.Edit:
         Color: =RGBA(255, 255, 255, 1)
         Height: =88
         Icon: =Icon.Edit
         OnSelect: |-
             =//Edits Select item in list
-            EditForm(EntertainmentEditForm);
+            EditForm(Food_BeverageEditForm);
             //Navigates to edit screen
-            Navigate('Edit Possible Entertainment')
+            Navigate('Edit Food and Beverage')
         PaddingBottom: =13
         PaddingLeft: =13
         PaddingRight: =13
@@ -79,21 +79,21 @@
         X: =1219
         ZIndex: =6
 
-    EntertainmentViewer_1 As formViewer:
-        DataSource: =Entertainment
+    Food_BeverageViewer As formViewer:
+        DataSource: ='Food and Beverage'
         Height: =610
-        Item: =EntertainmentGallery_1.Selected
+        Item: =Food_BeverageGallery.Selected
         Width: =926
         X: =426
         Y: =158
         ZIndex: =7
 
-        Title_DataCard8_1 As typedDataCard.textualViewCard:
+        Title_DataCard16 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Entertainment],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@'Food and Beverage'],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
@@ -102,7 +102,7 @@
             Y: =0
             ZIndex: =8
 
-            DataCardKey65_1 As label:
+            DataCardKey111 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -112,7 +112,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue63_1 As label:
+            DataCardValue108 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =27
@@ -122,25 +122,25 @@
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey65_1.Y + DataCardKey65_1.Height + 5
+                Y: =DataCardKey111.Y + DataCardKey111.Height + 5
                 ZIndex: =2
 
-        "'Entertainment Vendor_DataCard1_1' As typedDataCard.comboBoxViewCard":
+        Supplier_DataCard2 As typedDataCard.comboBoxViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="EntertainmentVendor"
-            Default: =ThisItem.'Entertainment Vendor'
+            DataField: ="Supplier"
+            Default: =ThisItem.Supplier
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Entertainment],DataSourceInfo.DisplayName,"EntertainmentVendor")
+            DisplayName: =DataSourceInfo([@'Food and Beverage'],DataSourceInfo.DisplayName,"Supplier")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue64_1.Selected
+            Update: =DataCardValue109.Selected
             Width: =308
             X: =1
             Y: =0
             ZIndex: =8
 
-            DataCardKey66_1 As label:
+            DataCardKey112 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -150,22 +150,22 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue64_1 As combobox:
+            DataCardValue109 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@Entertainment].EntertainmentVendor)
+                Items: =Choices([@'Food and Beverage'].Supplier)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Entertainment.EntertainmentVendor,DataCardValue64_1.SearchText)
+                SearchItems: =Choices('Food and Beverage'.Supplier,DataCardValue109.SearchText)
                 SelectMultiple: =false
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey66_1.Y + DataCardKey66_1.Height + 5
+                Y: =DataCardKey112.Y + DataCardKey112.Height + 5
                 ZIndex: =2
 
-            ErrorMessage38_1 As label:
+            ErrorMessage72 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -177,22 +177,59 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue64_1.Y + DataCardValue64_1.Height
+                Y: =DataCardValue109.Y + DataCardValue109.Height
                 ZIndex: =3
 
-            StarVisible38_1 As label:
+            StarVisible72 As label:
                 Align: =Align.Center
-                Height: =DataCardKey66_1.Height
+                Height: =DataCardKey112.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey66_1.Y
+                Y: =DataCardKey112.Y
                 ZIndex: =4
 
-    "EntertainmentGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        "'What are they supplying?_DataCard2' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Whataretheysupplying_x003f_"
+            Default: =ThisItem.'What are they supplying?'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Food and Beverage'],DataSourceInfo.DisplayName,"Whataretheysupplying_x003f_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =308
+            X: =2
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey113 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue110 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey113.Y + DataCardKey113.Height + 5
+                ZIndex: =2
+
+    "Food_BeverageGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =610
-        Items: =Search(Entertainment, SearchVendors.Text, "Title")
+        Items: =Search('Food and Beverage', SearchFood_Beverage.Text, "Title")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0
@@ -231,7 +268,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Entertainment Vendor'.Value
+            Text: =ThisItem.Supplier.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2_5.Width
             X: =Title2_5.X
@@ -261,14 +298,14 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-        JobRoleDeleteIcon_3 As icon.Trash:
+        Food_BeverageDeleteIcon As icon.Trash:
             Icon: =Icon.Trash
             OnSelect: =Set(varShowDelete, true)
             X: =40
             Y: =40
             ZIndex: =6
 
-    EntertainmentSearchIcon_1 As icon.Search:
+    Food_BeverageSearchIcon As icon.Search:
         Height: =70
         Icon: =Icon.Search
         PaddingBottom: =13
@@ -278,7 +315,7 @@
         Y: =88
         ZIndex: =14
 
-    EntertainmentDeleteConfirmation_1 As group:
+    Food_BeverageDeleteConfirmation As group:
         Height: =5
         Width: =5
         X: =40
@@ -305,7 +342,7 @@
         Label3_12 As label:
             Align: =Align.Center
             Height: =91
-            Text: ="Are you sure you want to delete " & EntertainmentGallery_1.Selected.Title & "?"
+            Text: ="Are you sure you want to delete " & Food_BeverageGallery.Selected.Title & "?"
             Visible: =varShowDelete
             Width: =488
             X: =439
@@ -316,7 +353,7 @@
             Fill: =RGBA(168, 0, 0, 1)
             OnSelect: |-
                 =//deletes selected item
-                Remove(Entertainment, EntertainmentGallery_1.Selected);
+                Remove('Food and Beverage', Food_BeverageGallery.Selected);
                 //exits out of delete confirmation interface
                 Set(varShowDelete, false)
             Text: ="Delete"
