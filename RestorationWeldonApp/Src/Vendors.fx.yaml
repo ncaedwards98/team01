@@ -332,7 +332,7 @@ Vendors As screen:
 
     "VendorsGallery As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Height: =610
-        Items: =SortByColumns(Filter([@Vendors_1], StartsWith(Title, SearchVendors.Text)), "Title")
+        Items: =Search(Vendors_1, SearchVendors.Text, "Title", "VendorType")
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,Color.LightBlue,Color.White)
         TemplatePadding: =0

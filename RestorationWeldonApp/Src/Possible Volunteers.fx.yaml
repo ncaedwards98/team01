@@ -585,12 +585,6 @@
             Y: =432
             ZIndex: =13
 
-    Icon11 As icon.OptionsList:
-        Icon: =Icon.OptionsList
-        X: =40
-        Y: =40
-        ZIndex: =16
-
     VolunteerDropdownFilter As dropdown:
         Default: ="All"
         Items: =CollectVideo
